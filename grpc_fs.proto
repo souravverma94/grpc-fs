@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package grpcfs;
+
+// Interface exported by the server.
+service FileSystem {
+  // Allow file content to be stored on a server and retrieved by supplying an ID.
+  // The content of large files will be sent as multiple messages.
+
+  // Send a file to the server, possibly in multiple chunks
+  rpc UploadFile(stream FileContent) returns (FileId) {}
+
+  // Request the content of a file from the server
+  rpc DownloadFile(FileId) returns (stream FileContent) {}
+}
+
+message FileId {
+  int32 id = 1;
+}
+
+message FileContent {
+  int32  id = 1;
+  string name = 2;
+  bytes  content = 3;
+}

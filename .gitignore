@@ -1,0 +1,5 @@
+*.o
+*.pb.*
+data/
+grpc_fs_client
+grpc_fs_server
