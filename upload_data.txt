@@ -1,0 +1,260 @@
+#1
+file1.txt
+Finished sending file with id 1
+Upload Latency: 4011ms
+file2.txt
+Finished sending file with id 2
+Upload Latency: 15134ms
+file3.txt
+Finished sending file with id 3
+Upload Latency: 67229ms
+file4.txt
+Finished sending file with id 4
+Upload Latency: 136605ms
+file5.txt
+Finished sending file with id 5
+Upload Latency: 637823ms
+file6.txt
+Finished sending file with id 6
+Upload Latency: 964168ms
+file7.txt
+Finished sending file with id 7
+Upload Latency: 1175932ms
+file8.txt
+Finished sending file with id 8
+Upload Latency: 1321524ms
+
+#2
+file1.txt
+Finished sending file with id 1
+Upload Latency: 3828ms
+file2.txt
+Finished sending file with id 2
+Upload Latency: 13735ms
+file3.txt
+Finished sending file with id 3
+Upload Latency: 61372ms
+file4.txt
+Finished sending file with id 4
+Upload Latency: 126732ms
+file5.txt
+Finished sending file with id 5
+Upload Latency: 626060ms
+file6.txt
+Finished sending file with id 6
+Upload Latency: 886075ms
+file7.txt
+Finished sending file with id 7
+Upload Latency: 1130680ms
+file8.txt
+Finished sending file with id 8
+Upload Latency: 1337521ms
+
+#3
+file1.txt
+Finished sending file with id 1
+Upload Latency: 3945ms
+file2.txt
+Finished sending file with id 2
+Upload Latency: 15341ms
+file3.txt
+Finished sending file with id 3
+Upload Latency: 65355ms
+file4.txt
+Finished sending file with id 4
+Upload Latency: 131432ms
+file5.txt
+Finished sending file with id 5
+Upload Latency: 664833ms
+file6.txt
+Finished sending file with id 6
+Upload Latency: 925180ms
+file7.txt
+Finished sending file with id 7
+Upload Latency: 1164955ms
+file8.txt
+Finished sending file with id 8
+Upload Latency: 1361915ms
+
+#4
+file1.txt
+Finished sending file with id 1
+Upload Latency: 3372ms
+file2.txt
+Finished sending file with id 2
+Upload Latency: 16161ms
+file3.txt
+Finished sending file with id 3
+Upload Latency: 71149ms
+file4.txt
+Finished sending file with id 4
+Upload Latency: 122540ms
+file5.txt
+Finished sending file with id 5
+Upload Latency: 629734ms
+file6.txt
+Finished sending file with id 6
+Upload Latency: 899919ms
+file7.txt
+Finished sending file with id 7
+Upload Latency: 1149809ms
+file8.txt
+Finished sending file with id 8
+Upload Latency: 1324961ms
+
+#5
+file1.txt
+Finished sending file with id 1
+Upload Latency: 3848ms
+file2.txt
+Finished sending file with id 2
+Upload Latency: 14829ms
+file3.txt
+Finished sending file with id 3
+Upload Latency: 67019ms
+file4.txt
+Finished sending file with id 4
+Upload Latency: 127688ms
+file5.txt
+Finished sending file with id 5
+Upload Latency: 639674ms
+file6.txt
+Finished sending file with id 6
+Upload Latency: 922920ms
+file7.txt
+Finished sending file with id 7
+Upload Latency: 1166455ms
+file8.txt
+Finished sending file with id 8
+Upload Latency: 1320763ms
+
+#6
+file1.txt
+Finished sending file with id 1
+Upload Latency: 3412ms
+file2.txt
+Finished sending file with id 2
+Upload Latency: 15594ms
+file3.txt
+Finished sending file with id 3
+Upload Latency: 70129ms
+file4.txt
+Finished sending file with id 4
+Upload Latency: 125858ms
+file5.txt
+Finished sending file with id 5
+Upload Latency: 622232ms
+file6.txt
+Finished sending file with id 6
+Upload Latency: 910004ms
+file7.txt
+Finished sending file with id 7
+Upload Latency: 1202641ms
+file8.txt
+Finished sending file with id 8
+Upload Latency: 1338402ms
+
+#7
+
+file1.txt
+Finished sending file with id 1
+Upload Latency: 10719ms
+file2.txt
+Finished sending file with id 2
+Upload Latency: 35211ms
+file3.txt
+Finished sending file with id 3
+Upload Latency: 67647ms
+file4.txt
+Finished sending file with id 4
+Upload Latency: 131611ms
+file5.txt
+Finished sending file with id 5
+Upload Latency: 644542ms
+file6.txt
+Finished sending file with id 6
+Upload Latency: 916270ms
+file7.txt
+Finished sending file with id 7
+Upload Latency: 1159831ms
+file8.txt
+Finished sending file with id 8
+Upload Latency: 1313954ms
+
+#8
+file1.txt
+Finished sending file with id 1
+Upload Latency: 17015ms
+file2.txt
+Finished sending file with id 2
+Upload Latency: 17303ms
+file3.txt
+Finished sending file with id 3
+Upload Latency: 64071ms
+file4.txt
+Finished sending file with id 4
+Upload Latency: 134605ms
+file5.txt
+Finished sending file with id 5
+Upload Latency: 650454ms
+file6.txt
+Finished sending file with id 6
+Upload Latency: 925681ms
+file7.txt
+Finished sending file with id 7
+Upload Latency: 1183181ms
+file8.txt
+Finished sending file with id 8
+Upload Latency: 1360914ms
+
+#9
+file1.txt
+Finished sending file with id 1
+Upload Latency: 10678ms
+file2.txt
+Finished sending file with id 2
+Upload Latency: 34133ms
+file3.txt
+Finished sending file with id 3
+Upload Latency: 96160ms
+file4.txt
+Finished sending file with id 4
+Upload Latency: 132999ms
+file5.txt
+Finished sending file with id 5
+Upload Latency: 722737ms
+file6.txt
+Finished sending file with id 6
+Upload Latency: 963325ms
+file7.txt
+Finished sending file with id 7
+Upload Latency: 1249014ms
+file8.txt
+Finished sending file with id 8
+Upload Latency: 1348048ms
+
+#10
+file1.txt
+Finished sending file with id 1
+Upload Latency: 4321ms
+file2.txt
+Finished sending file with id 2
+Upload Latency: 17012ms
+file3.txt
+Finished sending file with id 3
+Upload Latency: 66164ms
+file4.txt
+Finished sending file with id 4
+Upload Latency: 133989ms
+file5.txt
+Finished sending file with id 5
+Upload Latency: 654677ms
+file6.txt
+Finished sending file with id 6
+Upload Latency: 926474ms
+file7.txt
+Finished sending file with id 7
+Upload Latency: 1189631ms
+file8.txt
+Finished sending file with id 8
+Upload Latency: 1342347ms
