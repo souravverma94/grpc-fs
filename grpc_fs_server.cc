@@ -74,8 +74,7 @@ public:
         try {
             FileReaderIntoStream< ServerWriter<FileContent> > reader(filename, id, *writer);
 
-            // TODO: Make the chunk size configurable
-            const size_t chunk_size = 1UL << 20;    // Hardcoded to 1MB, which seems to be recommended from experience.
+            const size_t chunk_size = 1UL << 20;    // Hardcoded to 1MB
             reader.Read(chunk_size);
         }
         catch (const std::exception& ex) {
@@ -94,7 +93,6 @@ private:
 
 
 void RunServer() {
-    // TODO: Allow the port to be customised
   std::string server_address("0.0.0.0:50051");
   FileSystemImpl service;
 

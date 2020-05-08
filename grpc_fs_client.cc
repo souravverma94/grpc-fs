@@ -49,13 +49,11 @@ public:
         try {
             FileReaderIntoStream< ClientWriter<FileContent> > reader(filename, id, *writer);
 
-            // TODO: Make the chunk size configurable
             const size_t chunk_size = 1UL << 20;    // Hardcoded to 1MB, which seems to be recommended from experience.
             reader.Read(chunk_size);
         }
         catch (const std::exception& ex) {
             std::cerr << "Failed to send the file " << filename << ": " << ex.what() << std::endl;
-            // FIXME: Indicate to the server that something went wrong and that the trasfer should be aborted.
         }
     
         writer->WritesDone();
