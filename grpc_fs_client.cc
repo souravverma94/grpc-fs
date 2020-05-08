@@ -59,7 +59,7 @@ public:
         writer->WritesDone();
         Status status = writer->Finish();
         if (!status.ok()) {
-            std::cerr << "File Exchange rpc failed: " << status.error_message() << std::endl;
+            std::cerr << "File Uploading rpc failed: " << status.error_message() << std::endl;
             return false;
         }
         else {
@@ -138,7 +138,12 @@ int main(int argc, char** argv)
             usage(argv[0]);
         }
         const std::string filename = argv[3];
+        auto timeStart = std::chrono::high_resolution_clock::now();
         succeeded = client.UploadFile(id, filename);
+        auto timeEnd = std::chrono::high_resolution_clock::now();
+
+        long long duration = std::chrono::duration_cast<std::chrono::microseconds>(timeEnd - timeStart).count();
+        std::cout<<"Latency: "<<duration<<"ms\n";
     }
     else if ("get" == verb) {
         if (3 != argc) {
@@ -151,6 +156,46 @@ int main(int argc, char** argv)
         long long duration = std::chrono::duration_cast<std::chrono::microseconds>(timeEnd - timeStart).count();
         std::cout<<"Latency: "<<duration<<"ms\n";
     }
+    else if ("put_all" == verb) {
+        if (4 != argc) {
+            usage(argv[0]);
+        }
+        std::int32_t nfiles = atoi(argv[2]);
+        const std::string filenamePrefix = argv[3];
+        std::string filename;
+        for(int i=1; i<=nfiles; i++){
+            filename = filenamePrefix + std::to_string(i)+".txt";
+            std::cout<<filename<<"\n";
+            auto timeStart = std::chrono::high_resolution_clock::now();
+            succeeded = client.UploadFile(i, filename);
+            auto timeEnd = std::chrono::high_resolution_clock::now();
+            
+            if(true == succeeded){
+                long long duration = std::chrono::duration_cast<std::chrono::microseconds>(timeEnd - timeStart).count();
+                std::cout<<"Upload Latency: "<<duration<<"ms\n";
+            }
+            else
+                break;
+        }
+        
+    }
+    else if ("get_all" == verb) {
+        if (3 != argc) {
+            usage(argv[0]);
+        }
+        std::int32_t nfiles = atoi(argv[2]);
+        for(int i=1; i<=nfiles; i++){
+
+            auto timeStart = std::chrono::high_resolution_clock::now();
+            succeeded = client.DownloadFile(i);
+            auto timeEnd = std::chrono::high_resolution_clock::now();
+            if(true == succeeded){
+                long long duration = std::chrono::duration_cast<std::chrono::microseconds>(timeEnd - timeStart).count();
+                std::cout<<"Latency: "<<duration<<"ms\n";
+            }
+        }
+        
+    } 
     else {
         std::cerr << "Unknown verb " << verb << std::endl;
         usage(argv[0]);
