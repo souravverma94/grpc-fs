@@ -15,6 +15,6 @@ A gRPC based file transfer system in C++
   - create a folder to keep the files you want to send to the server (ex. build)
 - Go inside the new folder and run the client and upload file to the server 
   - cd build
-  - ../grpc_fs_client put <file_id> <filename>
+  - ../grpc_fs_client put <file_id> <file_name>
 - To Download the files use the following command
   - ../grpc_fs_client get <file_id>
