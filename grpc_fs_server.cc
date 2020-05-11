@@ -92,8 +92,8 @@ private:
 };
 
 
-void RunServer() {
-  std::string server_address("0.0.0.0:50051");
+void RunServer(std::string server_address) {
+//   std::string server_address("0.0.0.0:50051");
   FileSystemImpl service;
 
   ServerBuilder builder;
@@ -106,6 +106,10 @@ void RunServer() {
 
 int main(int argc, char** argv)
 {
-    RunServer();
+    std::string server_address("0.0.0.0:50051");
+    if(argc==2)
+        server_address = std::string(argv[1]);
+
+    RunServer(server_address);
     return 0;
 }

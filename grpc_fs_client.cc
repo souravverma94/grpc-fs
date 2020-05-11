@@ -111,33 +111,34 @@ private:
 
 void usage [[ noreturn ]] (const char* prog_name)
 {
-    std::cerr << "USAGE: " << prog_name << " [put|get] num_id [filename]" << std::endl;
+    std::cerr << "USAGE: " << prog_name << "[server address] [put|get|put_all|get_all] num_id [filename]" << std::endl;
     std::exit(EX_USAGE);
 }
 
 int main(int argc, char** argv)
 {
-    if (argc < 3) {
+    if (argc < 4) {
         usage(argv[0]);
     }
 
-    const std::string verb = argv[1];
+    const std::string verb = argv[2];
     std::int32_t id = -1;
     try {
-        id = std::atoi(argv[2]);
+        id = std::atoi(argv[3]);
     }
     catch (std::invalid_argument) {
-        std::cerr << "Invalid Id " << argv[2] << std::endl;
+        std::cerr << "Invalid Id " << argv[3] << std::endl;
         usage(argv[0]);
     }
     bool succeeded = false;
-    FileSystemClient client(grpc::CreateChannel("localhost:50051", grpc::InsecureChannelCredentials()));
+    std::string server_address(argv[1]);
+    FileSystemClient client(grpc::CreateChannel(server_address, grpc::InsecureChannelCredentials()));
 
     if ("put" == verb) {
-        if (4 != argc) {
+        if (5 != argc) {
             usage(argv[0]);
         }
-        const std::string filename = argv[3];
+        const std::string filename = argv[4];
         auto timeStart = std::chrono::high_resolution_clock::now();
         succeeded = client.UploadFile(id, filename);
         auto timeEnd = std::chrono::high_resolution_clock::now();
@@ -146,7 +147,7 @@ int main(int argc, char** argv)
         std::cout<<"Latency: "<<duration<<"ms\n";
     }
     else if ("get" == verb) {
-        if (3 != argc) {
+        if (4 != argc) {
             usage(argv[0]);
         }
         auto timeStart = std::chrono::high_resolution_clock::now();
@@ -157,11 +158,11 @@ int main(int argc, char** argv)
         std::cout<<"Latency: "<<duration<<"ms\n";
     }
     else if ("put_all" == verb) {
-        if (4 != argc) {
+        if (5 != argc) {
             usage(argv[0]);
         }
-        std::int32_t nfiles = atoi(argv[2]);
-        const std::string filenamePrefix = argv[3];
+        std::int32_t nfiles = atoi(argv[3]);
+        const std::string filenamePrefix = argv[4];
         std::string filename;
         for(int i=1; i<=nfiles; i++){
             filename = filenamePrefix + std::to_string(i)+".txt";
@@ -180,10 +181,10 @@ int main(int argc, char** argv)
         
     }
     else if ("get_all" == verb) {
-        if (3 != argc) {
+        if (4 != argc) {
             usage(argv[0]);
         }
-        std::int32_t nfiles = atoi(argv[2]);
+        std::int32_t nfiles = atoi(argv[3]);
         for(int i=1; i<=nfiles; i++){
 
             auto timeStart = std::chrono::high_resolution_clock::now();
