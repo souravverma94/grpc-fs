@@ -1,0 +1,180 @@
+#1
+Finished receiving the file file1.txt id: 1
+Latency: 3531ms
+Finished receiving the file file2.txt id: 2
+Latency: 11646ms
+Finished receiving the file file3.txt id: 3
+Latency: 51666ms
+Finished receiving the file file4.txt id: 4
+Latency: 101495ms
+Finished receiving the file file5.txt id: 5
+Latency: 478122ms
+Finished receiving the file file6.txt id: 6
+Latency: 705671ms
+Finished receiving the file file7.txt id: 7
+Latency: 867631ms
+Finished receiving the file file8.txt id: 8
+Latency: 991240ms
+
+#2
+
+Finished receiving the file file1.txt id: 1
+Latency: 3844ms
+Finished receiving the file file2.txt id: 2
+Latency: 11429ms
+Finished receiving the file file3.txt id: 3
+Latency: 47566ms
+Finished receiving the file file4.txt id: 4
+Latency: 93920ms
+Finished receiving the file file5.txt id: 5
+Latency: 441632ms
+Finished receiving the file file6.txt id: 6
+Latency: 627655ms
+Finished receiving the file file7.txt id: 7
+Latency: 798224ms
+Finished receiving the file file8.txt id: 8
+Latency: 908049ms
+
+#3
+Finished receiving the file file1.txt id: 1
+Latency: 7137ms
+Finished receiving the file file2.txt id: 2
+Latency: 22428ms
+Finished receiving the file file3.txt id: 3
+Latency: 49711ms
+Finished receiving the file file4.txt id: 4
+Latency: 111344ms
+Finished receiving the file file5.txt id: 5
+Latency: 435201ms
+Finished receiving the file file6.txt id: 6
+Latency: 692749ms
+Finished receiving the file file7.txt id: 7
+Latency: 839640ms
+Finished receiving the file file8.txt id: 8
+Latency: 995424ms
+
+#4
+Finished receiving the file file1.txt id: 1
+Latency: 3710ms
+Finished receiving the file file2.txt id: 2
+Latency: 12641ms
+Finished receiving the file file3.txt id: 3
+Latency: 47248ms
+Finished receiving the file file4.txt id: 4
+Latency: 87397ms
+Finished receiving the file file5.txt id: 5
+Latency: 429213ms
+Finished receiving the file file6.txt id: 6
+Latency: 576178ms
+Finished receiving the file file7.txt id: 7
+Latency: 826770ms
+Finished receiving the file file8.txt id: 8
+Latency: 908260ms
+
+#5
+Finished receiving the file file1.txt id: 1
+Latency: 3704ms
+Finished receiving the file file2.txt id: 2
+Latency: 12064ms
+Finished receiving the file file3.txt id: 3
+Latency: 57292ms
+Finished receiving the file file4.txt id: 4
+Latency: 128512ms
+Finished receiving the file file5.txt id: 5
+Latency: 427839ms
+Finished receiving the file file6.txt id: 6
+Latency: 662667ms
+Finished receiving the file file7.txt id: 7
+Latency: 831270ms
+Finished receiving the file file8.txt id: 8
+Latency: 995030ms
+
+#6
+Finished receiving the file file1.txt id: 1
+Latency: 10962ms
+Finished receiving the file file2.txt id: 2
+Latency: 29142ms
+Finished receiving the file file3.txt id: 3
+Latency: 47399ms
+Finished receiving the file file4.txt id: 4
+Latency: 82260ms
+Finished receiving the file file5.txt id: 5
+Latency: 457569ms
+Finished receiving the file file6.txt id: 6
+Latency: 681942ms
+Finished receiving the file file7.txt id: 7
+Latency: 819077ms
+Finished receiving the file file8.txt id: 8
+Latency: 909395ms
+
+#7
+Finished receiving the file file1.txt id: 1
+Latency: 3247ms
+Finished receiving the file file2.txt id: 2
+Latency: 11404ms
+Finished receiving the file file3.txt id: 3
+Latency: 46607ms
+Finished receiving the file file4.txt id: 4
+Latency: 84862ms
+Finished receiving the file file5.txt id: 5
+Latency: 472101ms
+Finished receiving the file file6.txt id: 6
+Latency: 705584ms
+Finished receiving the file file7.txt id: 7
+Latency: 784434ms
+Finished receiving the file file8.txt id: 8
+Latency: 967203ms
+
+#8
+Finished receiving the file file1.txt id: 1
+Latency: 10045ms
+Finished receiving the file file2.txt id: 2
+Latency: 38183ms
+Finished receiving the file file3.txt id: 3
+Latency: 63129ms
+Finished receiving the file file4.txt id: 4
+Latency: 88648ms
+Finished receiving the file file5.txt id: 5
+Latency: 415566ms
+Finished receiving the file file6.txt id: 6
+Latency: 707893ms
+Finished receiving the file file7.txt id: 7
+Latency: 872974ms
+Finished receiving the file file8.txt id: 8
+Latency: 962583ms
+
+#9
+Finished receiving the file file1.txt id: 1
+Latency: 4078ms
+Finished receiving the file file2.txt id: 2
+Latency: 12931ms
+Finished receiving the file file3.txt id: 3
+Latency: 47115ms
+Finished receiving the file file4.txt id: 4
+Latency: 88045ms
+Finished receiving the file file5.txt id: 5
+Latency: 442618ms
+Finished receiving the file file6.txt id: 6
+Latency: 621184ms
+Finished receiving the file file7.txt id: 7
+Latency: 793629ms
+Finished receiving the file file8.txt id: 8
+Latency: 886904ms
+
+#10
+Finished receiving the file file1.txt id: 1
+Latency: 3277ms
+Finished receiving the file file2.txt id: 2
+Latency: 13906ms
+Finished receiving the file file3.txt id: 3
+Latency: 50317ms
+Finished receiving the file file4.txt id: 4
+Latency: 84175ms
+Finished receiving the file file5.txt id: 5
+Latency: 424896ms
+Finished receiving the file file6.txt id: 6
+Latency: 619643ms
+Finished receiving the file file7.txt id: 7
+Latency: 807813ms
+Finished receiving the file file8.txt id: 8
+Latency: 905324ms
